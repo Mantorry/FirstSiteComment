@@ -11,6 +11,8 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
+
+
     def get_short_text(self):
         SHORT_TEXT_LEN = 300
         if len(self.text) > SHORT_TEXT_LEN:
